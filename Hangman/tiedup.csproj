@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60ED0A39-F87A-4F70-B177-867D4DA918F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tiedup</RootNamespace>
+    <AssemblyName>tiedup</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Program Files\System.Data.SQLite\2010\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dictionary.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="dictionary.s3db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playagain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitbuttonh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbuttonh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectionbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startbuttonh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltr-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltrZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10trials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11trials.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
